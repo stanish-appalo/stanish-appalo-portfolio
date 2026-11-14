@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automation | Stanish Appalo</title>
+<meta name="description" content="n8n workflows and automated video editing pipelines by Stanish Appalo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=9">
+</head>
+<body>
+<div class="curtain" aria-hidden="true"><span><span>Automate</span></span></div>
+<div class="ticker" aria-hidden="true"><div class="tt"><span>Open to full stack roles</span><b>✦</b><span>Currently building at Norml</span><b>✦</b><span>Java / Spring Boot / JS / n8n</span><b>✦</b><span>Based in Chennai, working worldwide</span><b>✦</b><span>10+ sites live in production</span><b>✦</b></div><div class="tt"><span>Open to full stack roles</span><b>✦</b><span>Currently building at Norml</span><b>✦</b><span>Java / Spring Boot / JS / n8n</span><b>✦</b><span>Based in Chennai, working worldwide</span><b>✦</b><span>10+ sites live in production</span><b>✦</b></div></div>
+<header class="nav">
+  <a class="logo" href="index.html" data-label="Home" aria-label="Stanish Appalo, home">Stanish<i>.</i></a>
+  <nav class="links">
+    <a href="index.html" data-label="Home" >Home</a>
+    <a href="design.html" data-label="Design" >Web Design</a>
+    <a href="dev.html" data-label="Dev" >Development</a>
+    <a href="automation.html" data-label="Automate" class="on">Automation</a>
+  </nav>
+  <a class="cta" href="mailto:stanishappaloja@gmail.com"><span class="dot"></span>Start a project</a>
+  <button class="burger" type="button">Menu</button>
+</header>
+<main>
+<section class="hero">
+  <div class="bg"><img src="img/timeline.jpg" alt=""></div>
+  <p class="eyebrow rv">03 / Automation</p>
+  <h1 class="mega" style="margin-top:14px">
+    <span class="ln"><span>Work that runs</span></span>
+    <span class="ln"><span class="vi">while I sleep.</span></span>
+    <span class="hscript script">on autopilot</span>
+  </h1>
+  <div class="hero-foot">
+    <p class="rv">n8n workflows that sort documents, chase leads and send alerts, plus automated video editing pipelines that turn a script into a finished upload.</p>
+    <div class="scroll-cue rv"><i></i>Workflows</div>
+    <p class="r rv">n8n · webhooks · LLMs<br>FFmpeg · Whisper · Python</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2 class="h2"><span class="ln"><span>n8n</span></span><span class="ln"><span class="red">workflows</span></span></h2><p class="eyebrow rv">Selected <b>flows</b></p></div>
+
+  <div class="case">
+    <div class="side"><span class="n">01 / Government client</span><h3>Board Paper Router</h3><p class="role">Replaced manual sorting of board meeting documents.</p>
+      <div class="chips"><span>n8n</span><span>IMAP</span><span>LLM</span><span>PDF split</span></div></div>
+    <div class="rv">
+      <div class="flow"><div class="lane">
+        <div class="node trig"><small>Trigger</small>New mail / folder drop</div><div class="wire"></div>
+        <div class="node"><small>Extract</small>PDF text + pages</div><div class="wire"></div>
+        <div class="node ai"><small>AI</small>Classify by agenda item</div><div class="wire"></div>
+        <div class="node"><small>Split</small>Separate each paper</div><div class="wire"></div>
+        <div class="branch"><div class="node"><small>Route</small>Department folders</div><div class="node"><small>Notify</small>Email the secretariat</div></div>
+      </div></div>
+      <ul style="margin-top:18px"><li>Incoming bundles are classified, split into individual papers and filed into the right department folder automatically.</li><li>Uncertain items go to a human review queue instead of being guessed.</li></ul>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="side"><span class="n">02 / Internal ops</span><h3>Status &amp; Alert Hub</h3><p class="role">One place for every system to report what happened.</p>
+      <div class="chips"><span>Webhooks</span><span>Cron</span><span>Error workflow</span><span>Email</span></div></div>
+    <div class="rv">
+      <div class="flow"><div class="lane">
+        <div class="branch"><div class="node trig"><small>Webhook</small>App events</div><div class="node trig"><small>Schedule</small>Nightly checks</div></div><div class="wire"></div>
+        <div class="node"><small>Switch</small>Type + priority</div><div class="wire"></div>
+        <div class="node"><small>Retry</small>3x with backoff</div><div class="wire"></div>
+        <div class="branch"><div class="node"><small>Send</small>Email / messaging</div><div class="node"><small>Log</small>Status sheet</div></div>
+      </div></div>
+      <ul style="margin-top:18px"><li>Scheduled and webhook-triggered flows connect internal systems to email and messaging for status updates.</li><li>Dedicated error workflow with retries, so a failed send never silently disappears.</li></ul>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="side"><span class="n">03 / Agency growth</span><h3>Local Lead Finder</h3><p class="role">Finds local businesses that need a better website.</p>
+      <div class="chips"><span>n8n</span><span>Maps data</span><span>PageSpeed</span><span>LLM</span><span>Sheets</span></div></div>
+    <div class="rv">
+      <div class="flow"><div class="lane">
+        <div class="node trig"><small>Schedule</small>Weekly by city</div><div class="wire"></div>
+        <div class="node"><small>Collect</small>Businesses + sites</div><div class="wire"></div>
+        <div class="node"><small>Audit</small>No site / slow / not mobile</div><div class="wire"></div>
+        <div class="node ai"><small>AI</small>Draft a personal note</div><div class="wire"></div>
+        <div class="node"><small>Sheet</small>Queue for approval</div>
+      </div></div>
+      <ul style="margin-top:18px"><li>Scores each business on whether its website is missing, slow or broken on phones.</li><li>Writes a first-draft message per lead, but nothing is sent without a human approving it.</li></ul>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="side"><span class="n">04 / Client product</span><h3>Review Watch</h3><p class="role">Companion to RevUp for business owners.</p>
+      <div class="chips"><span>Supabase</span><span>Webhook</span><span>n8n</span></div></div>
+    <div class="rv">
+      <div class="flow"><div class="lane">
+        <div class="node trig"><small>DB webhook</small>New feedback row</div><div class="wire"></div>
+        <div class="node"><small>IF</small>Rating 3 or below</div><div class="wire"></div>
+        <div class="branch"><div class="node"><small>Alert</small>Owner, right away</div><div class="node"><small>Digest</small>Weekly summary</div></div>
+      </div></div>
+      <ul style="margin-top:18px"><li>Unhappy feedback reaches the owner within minutes, so they can fix it before it becomes a public review.</li></ul>
+    </div>
+  </div>
+</section>
+
+<div class="strip"><img src="img/circuit.jpg" alt="Circuit board close-up" loading="lazy"><span class="tag">Script in, video out</span></div>
+<section class="sec dark">
+  <div class="sec-head"><h2 class="h2"><span class="ln"><span>Automated</span></span><span class="ln"><span class="red">video editing</span></span></h2><p class="eyebrow rv">Script in, <b>video out</b></p></div>
+
+  <div class="case">
+    <div class="side"><span class="n">05 / Long form</span><h3>Script to Upload</h3><p class="role">Pipeline for faceless long-form YouTube channels.</p>
+      <div class="chips"><span>Python</span><span>FFmpeg</span><span>TTS</span><span>LLM</span></div></div>
+    <div class="rv">
+      <div class="flow"><div class="lane">
+        <div class="node ai"><small>Write</small>Research + script</div><div class="wire"></div>
+        <div class="node"><small>Voice</small>TTS narration</div><div class="wire"></div>
+        <div class="node"><small>Visuals</small>B-roll + screen capture</div><div class="wire"></div>
+        <div class="node"><small>FFmpeg</small>Cut, captions, music duck</div><div class="wire"></div>
+        <div class="node trig"><small>Out</small>Thumbnail + draft upload</div>
+      </div></div>
+      <ul style="margin-top:18px"><li>Assembles narration, visuals, burned-in captions and ducked background music into a finished edit without opening a timeline.</li><li>Leaves a draft for a final human watch before publishing.</li></ul>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="side"><span class="n">06 / Short form</span><h3>Shorts Cutter</h3><p class="role">Turns one long video into a batch of vertical clips.</p>
+      <div class="chips"><span>Whisper</span><span>FFmpeg</span><span>Python</span></div></div>
+    <div class="rv">
+      <div class="flow"><div class="lane">
+        <div class="node trig"><small>Input</small>Long video</div><div class="wire"></div>
+        <div class="node"><small>Whisper</small>Word-level transcript</div><div class="wire"></div>
+        <div class="node ai"><small>AI</small>Pick strongest hooks</div><div class="wire"></div>
+        <div class="node"><small>Edit</small>9:16 crop, trim silence, captions</div><div class="wire"></div>
+        <div class="node"><small>Queue</small>Ready to schedule</div>
+      </div></div>
+      <ul style="margin-top:18px"><li>Silence removal and word-timed captions are done automatically, so each clip only needs a quick check.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="hello" style="padding-bottom:clamp(60px,8vw,120px)">
+  <span class="big ln"><span>Your</span></span>
+  <span class="tw" data-tw="inbox|invoices|reports|leads|edits">{{ <span class="txt"></span><span class="car"></span> }}</span>
+  <p class="lead rv" style="flex-basis:100%;margin-top:20px">If someone on your team does the same thing every week, it can probably be a workflow. <a href="mailto:stanishappaloja@gmail.com" style="border-bottom:1.5px solid var(--red)">Tell me what it is.</a></p>
+</section>
+</main>
+<footer class="foot">
+  <p class="eyebrow rv">Got something to build?</p>
+  <h2 class="mega" style="margin-top:14px"><span class="ln"><span>Let's make</span></span><span class="ln"><span>it <span class="vi">live.</span></span></span>
+    <svg class="scrib" viewBox="0 0 520 200"><path d="M20 150 C120 40, 300 20, 500 60" stroke-width="5"/><path d="M470 30 L505 62 L462 88" stroke-width="5"/></svg>
+  </h2>
+  <div class="foot-row">
+    <div><h5>Email</h5><a class="mail" href="mailto:stanishappaloja@gmail.com">stanishappaloja@gmail.com</a></div>
+    <div><h5>Pages</h5><a href="index.html" data-label="Home">Home</a><a href="design.html" data-label="Design">Web Design</a><a href="dev.html" data-label="Dev">Development</a><a href="automation.html" data-label="Automate">Automation</a></div>
+    <div><h5>Elsewhere</h5><a href="https://www.linkedin.com/in/stanishappalo/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/stanish-appalo" target="_blank" rel="noopener">GitHub ↗</a></div>
+  </div>
+  <div class="legal"><span>© 2026 Stanish Appalo J A</span><span id="clock">Chennai</span><span>Designed and coded by hand</span></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/site.js?v=6"></script>
+</body>
+</html>

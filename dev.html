@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Development | Stanish Appalo</title>
+<meta name="description" content="Java, Spring Boot, PWAs, Android releases and on-premise AI systems built by Stanish Appalo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=9">
+</head>
+<body>
+<div class="curtain" aria-hidden="true"><span><span>Dev</span></span></div>
+<div class="ticker" aria-hidden="true"><div class="tt"><span>Open to full stack roles</span><b>✦</b><span>Currently building at Norml</span><b>✦</b><span>Java / Spring Boot / JS / n8n</span><b>✦</b><span>Based in Chennai, working worldwide</span><b>✦</b><span>10+ sites live in production</span><b>✦</b></div><div class="tt"><span>Open to full stack roles</span><b>✦</b><span>Currently building at Norml</span><b>✦</b><span>Java / Spring Boot / JS / n8n</span><b>✦</b><span>Based in Chennai, working worldwide</span><b>✦</b><span>10+ sites live in production</span><b>✦</b></div></div>
+<header class="nav">
+  <a class="logo" href="index.html" data-label="Home" aria-label="Stanish Appalo, home">Stanish<i>.</i></a>
+  <nav class="links">
+    <a href="index.html" data-label="Home" >Home</a>
+    <a href="design.html" data-label="Design" >Web Design</a>
+    <a href="dev.html" data-label="Dev" class="on">Development</a>
+    <a href="automation.html" data-label="Automate" >Automation</a>
+  </nav>
+  <a class="cta" href="mailto:stanishappaloja@gmail.com"><span class="dot"></span>Start a project</a>
+  <button class="burger" type="button">Menu</button>
+</header>
+<main>
+<section class="hero">
+  <div class="bg"><img src="img/code.jpg" alt=""></div>
+  <p class="eyebrow rv">02 / Development</p>
+  <h1 class="mega" style="margin-top:14px">
+    <span class="ln"><span>From schema</span></span>
+    <span class="ln"><span class="vi">to Play Store.</span></span>
+    <span class="hscript script">end to end</span>
+  </h1>
+  <div class="hero-foot">
+    <p class="rv">Java and Spring Boot backends, Struts/JSP enterprise code, Supabase PWAs, Android releases and on-premise AI. Built for production, not demos.</p>
+    <div class="scroll-cue rv"><i></i>Case studies</div>
+    <p class="r rv"><a href="https://github.com/stanish-appalo" target="_blank" rel="noopener" style="border-bottom:1px solid">github.com/stanish-appalo ↗</a></p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="case">
+    <div class="side"><span class="n">01 / Travel platform</span><h3>Airmango</h3><p class="role">Software Developer (Contract), remote. Sep 2026 to Oct 2026. A travel platform for iOS, Android and the web where creators turn trip photos and videos into bookable trips.</p>
+      <div class="chips"><span>React Native</span><span>Expo</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>Deno</span><span>Gemini</span><span>Stripe</span><span>Instagram Graph API</span><span>Mapbox</span></div>
+      <a class="go" href="https://airmango.com/" target="_blank" rel="noopener">airmango.com</a><div class="built"><span>Built at</span><img src="img/airmango-mark.svg" alt="" width="16" height="16"><b class="am">airmango</b></div></div>
+    <div class="rv">
+      <div class="shot"><img src="img/airmango.jpg" alt="airmango.com homepage" loading="lazy"></div>
+      <ul style="margin-top:22px">
+        <li><b>Mobile app:</b> built and improved trip creation, the feed, sharing, collections and creator profiles in the React Native (Expo) app.</li>
+        <li><b>AI trip import:</b> photo-to-trip import with Google Gemini vision that groups photos into stops, names places, filters out screenshots and repeats, and drafts descriptions.</li>
+        <li><b>Voice import:</b> a creator describes a trip out loud and the app fills in the stops from the recording.</li>
+        <li><b>Free Trips program:</b> built end to end, from database tables, server functions and scheduled rounds to push notifications, emails and admin review screens.</li>
+        <li><b>Operator brand check:</b> automated scoring report for tour operators from their reviews and Instagram data, collected through Apify.</li>
+        <li><b>Instagram + payments:</b> Instagram login and post import via the Graph API (including Meta app review prep), and embedded Stripe checkout for operators.</li>
+        <li><b>Admin panel:</b> gig catalogue, Travel Architect review table, Instagram profile previews and the trip builder.</li>
+        <li><b>Reliability:</b> fixed data-loss bugs like unsaved trip edits and silently failing messages, and tested Android staging releases across screens, text sizes and permission states.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="case">
+    <div class="side"><span class="n">02 / Enterprise</span><h3>Docuventa DMS</h3><p class="role">Greenbooks Imaging. Document management for government clients.</p>
+      <div class="chips"><span>Java</span><span>Struts / JSP</span><span>REST</span><span>RAG</span><span>MySQL</span></div><div class="built"><span>Built at</span><img src="img/greenbooks.png" alt="Greenbooks Imaging" width="76" height="20"></div></div>
+    <ul class="rv">
+      <li>Helped build an AI document chatbot: users ask questions in plain language and get answers grounded in their own indexed documents.</li>
+      <li>Built console modules, appointment and document booking workflows, and REST endpoints consumed by the field mobile app.</li>
+      <li>Worked on document comparison tooling and biometric authentication for secure access.</li>
+      <li>Bug fixing, regression testing and production debugging for live government deployments.</li>
+    </ul>
+  </div>
+  <div class="case">
+    <div class="side"><span class="n">03 / On-prem AI</span><h3>KYC Document Classifier</h3><p class="role">Sorts identity and financial documents with zero data leaving the network.</p>
+      <div class="chips"><span>Python</span><span>Ollama vision</span><span>Embeddings</span><span>ChromaDB</span></div></div>
+    <div class="rv">
+      <div class="term"><div class="bar"><i></i><i></i><i></i></div><pre><span class="c"># sample run: merged 38-page scan, 3 people</span>
+<span class="k">split</span>   ID change at p.9, p.21      <span class="s">3 bundles</span>
+<span class="k">match</span>   vector memory (ChromaDB)    <span class="s">31 / 38 hits</span>
+<span class="k">vision</span>  fallback on 7 pages         <span class="s">llava, local</span>
+<span class="k">sort</span>    Aadhaar 6 · PAN 5 · Bank 19 · Land 8
+<span class="k">review</span>  2 flagged, human confirmed
+<span class="k">learn</span>   corrections stored          <span class="s">memory +2</span>
+<span class="c"># checkpoint saved. nothing left the LAN.</span></pre></div>
+      <ul style="margin-top:20px">
+        <li>Learns from every human correction and keeps confirmed classifications permanently.</li>
+        <li>Auto-splits merged multi-document PDFs per document type and per person by detecting ID-number changes.</li>
+        <li>Visual review panel, full-text and ID search, crash-safe checkpointed processing.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="case">
+    <div class="side"><span class="n">04 / Android</span><h3>Prakasha MCQ</h3><p class="role">Learning app built and released end to end.</p>
+      <div class="chips"><span>Angular</span><span>Ionic</span><span>Cordova</span><span>OAuth2</span><span>Gradle</span></div><div class="built"><span>Built at</span><img src="img/greenbooks.png" alt="Greenbooks Imaging" width="76" height="20"></div></div>
+    <ul class="rv">
+      <li>Multiple test modes, chapter-wise bookmarks, mistake review, in-app credits and error reporting.</li>
+      <li>Google Sign-In with an OAuth2 server flow and deep-link auto login.</li>
+      <li>Owned the release pipeline: branding, deep-link scheme, Gradle signing and versioned AAB builds for Google Play.</li>
+    </ul>
+  </div>
+  <div class="case">
+    <div class="side"><span class="n">05 / Infra</span><h3>Learning Platform</h3><p class="role">Production LMS behind the app: 26,000+ questions across 82 tests.</p>
+      <div class="chips"><span>Docker</span><span>Ubuntu</span><span>nginx</span><span>Cloudflare</span><span>PHP</span></div></div>
+    <ul class="rv">
+      <li>Dockerized on Ubuntu with nginx and Cloudflare TLS, then migrated live across VMs with zero data loss.</li>
+      <li>Custom PHP plugin exposing REST services for bookmarks, mistake tracking and auth.</li>
+      <li>Python pipelines using vision LLMs to turn scanned textbooks into tagged question banks in English, Hindi and Tamil.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="strip"><img src="img/server.jpg" alt="Server racks" loading="lazy"><span class="tag">Under the hood</span></div>
+<section class="sec dark">
+  <div class="sec-head"><h2 class="h2"><span class="ln"><span>More I've</span></span><span class="ln"><span class="red">shipped</span></span></h2><p class="eyebrow rv">Apps and side builds</p></div>
+  <div class="tl">
+    <a class="row rv" href="https://orbit.norml.in/" target="_blank" rel="noopener" data-img="img/orbit.jpg"><span class="when">PWA / Supabase</span><span class="co">Orbit ↗</span><span class="ro">Team status, daily updates, tasks, chat and calendar, used daily by the Norml team. Started life as NetRunner, now renamed Orbit.</span></a><div class="float"><img src="img/orbit.jpg" alt=""></div>
+    <a class="row rv" href="https://norml-reviews.vercel.app" target="_blank" rel="noopener"><span class="when">TypeScript / Supabase</span><span class="co">RevUp ↗</span><span class="ro">QR feedback that sends happy customers to Google and keeps complaints private.</span></a>
+    <a class="row rv" href="https://github.com/stanish-appalo/farrish-reports" target="_blank" rel="noopener"><span class="when">PWA / Supabase</span><span class="co">Farrish Reports ↗</span><span class="ro">Field reporting for a pharma sales team: daily and weekly reports, expenses, admin console.</span></a>
+    <a class="row rv" href="https://github.com/stanish-appalo/Inventory-management-project" target="_blank" rel="noopener"><span class="when">Spring Boot / React</span><span class="co">Inventory System ↗</span><span class="ro">Products, suppliers and stock movements with low-stock alerts and reports.</span></a>
+    <a class="row rv" href="https://github.com/stanish-appalo/ai-chat-application" target="_blank" rel="noopener"><span class="when">Spring / WebSocket</span><span class="co">Realtime Chat ↗</span><span class="ro">Chat rooms with live presence, built to plug in AI responders.</span></a>
+    <a class="row rv" href="https://uptime-monitor-s5c9.onrender.com" target="_blank" rel="noopener"><span class="when">Node / Postgres</span><span class="co">Uptime Monitor ↗</span><span class="ro">Uptime checks with teams, role-based access and a background checker.</span></a>
+  </div>
+</section>
+
+<section class="skills">
+  <div>
+    <p class="eyebrow rv">Certified</p>
+    <h2 class="h2" style="margin-top:12px"><span class="ln"><span>Paper</span></span><span class="ln"><span class="red">trail</span></span></h2>
+  </div>
+  <div class="facts rv">
+    <div><span>Karam Academy</span><span>Java + Spring Boot</span></div>
+    <div><span>Meta / Coursera</span><span>Introduction to Front-End Development</span></div>
+    <div><span>IBM</span><span>Artificial Intelligence Fundamentals</span></div>
+    <div><span>Genik Technologies</span><span>Machine Learning Intern</span></div>
+    <div><span>Jeppiaar</span><span>BE Electronics and Communication, 2022 - 2026</span></div>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <p class="eyebrow rv">Got something to build?</p>
+  <h2 class="mega" style="margin-top:14px"><span class="ln"><span>Let's make</span></span><span class="ln"><span>it <span class="vi">live.</span></span></span>
+    <svg class="scrib" viewBox="0 0 520 200"><path d="M20 150 C120 40, 300 20, 500 60" stroke-width="5"/><path d="M470 30 L505 62 L462 88" stroke-width="5"/></svg>
+  </h2>
+  <div class="foot-row">
+    <div><h5>Email</h5><a class="mail" href="mailto:stanishappaloja@gmail.com">stanishappaloja@gmail.com</a></div>
+    <div><h5>Pages</h5><a href="index.html" data-label="Home">Home</a><a href="design.html" data-label="Design">Web Design</a><a href="dev.html" data-label="Dev">Development</a><a href="automation.html" data-label="Automate">Automation</a></div>
+    <div><h5>Elsewhere</h5><a href="https://www.linkedin.com/in/stanishappalo/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/stanish-appalo" target="_blank" rel="noopener">GitHub ↗</a></div>
+  </div>
+  <div class="legal"><span>© 2026 Stanish Appalo J A</span><span id="clock">Chennai</span><span>Designed and coded by hand</span></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/site.js?v=6"></script>
+</body>
+</html>
