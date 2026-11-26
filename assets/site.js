@@ -36,7 +36,7 @@ if(fl){var fi=fl.querySelector('img');
 
 if(!window.gsap||reduce){doc.classList.add('reduce');if(curtain)curtain.remove();return;}
 gsap.registerPlugin(ScrollTrigger);
-var lenis=new Lenis({lerp:.085});
+var lenis=new Lenis({lerp:.085});window.__lenis=lenis;
 lenis.on('scroll',ScrollTrigger.update);
 gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);
 document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var h=a.getAttribute('href');if(h.length>1){e.preventDefault();lenis.scrollTo(h,{offset:-70})}})});
@@ -117,3 +117,6 @@ if(st){gsap.to(st,{rotate:200,transformOrigin:'50% 50%',ease:'none',scrollTrigge
 (function(){var n=document.querySelector('.nav');if(!n)return;var last=scrollY;
 addEventListener('scroll',function(){var y=scrollY;if(n.classList.contains('open'))return;
   if(y>last+4&&y>180)n.classList.add('hide');else if(y<last-4||y<=180)n.classList.remove('hide');last=y},{passive:true});})();
+(function(){var n=document.querySelector('.nav'),b=document.querySelector('.burger');if(!n||!b)return;
+new MutationObserver(function(){var o=n.classList.contains('open');document.documentElement.classList.toggle('menu-open',o);if(window.__lenis)o?__lenis.stop():__lenis.start()}).observe(n,{attributes:true,attributeFilter:['class']});
+n.querySelectorAll('.links a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.textContent='Menu'})});})();
