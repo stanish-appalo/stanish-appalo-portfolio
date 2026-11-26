@@ -434,3 +434,8 @@ a.row:hover{padding-left:12px}
 body[data-line] main,body[data-line] .foot{position:relative;z-index:1}
 body[data-line]{position:relative}
 @media(max-width:700px){.scroll-line path{stroke-width:1.8}}
+.scroll-line .rib{fill:none;stroke:url(#rib);stroke-linecap:round;stroke-linejoin:round}
+.scroll-line .rib-glow{fill:none;stroke:url(#rib);stroke-linecap:round;opacity:.16}
+.scroll-line .rib-hi{fill:none;stroke:#fff;stroke-linecap:round;opacity:.45;transform:translate(-2px,-2px)}
+.scroll-line .rib-head{fill:#fff;stroke:var(--violet);stroke-width:4;filter:drop-shadow(0 0 10px rgba(138,56,245,.7))}
+.scroll-line .rib-glow{opacity:.22}
