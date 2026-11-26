@@ -415,3 +415,7 @@ a.row:hover{padding-left:12px}
 }
 @media(hover:none){.sec-head .eyebrow:has(b){}.prow:hover{padding-left:0;background:none}}
 @media(hover:none){.peek{display:none}}
+.ph{position:relative}
+.wip{position:absolute;top:10px;left:10px;z-index:2;display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:var(--lime);font:500 10px var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:5px 9px;border-radius:99px}
+.wip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime);animation:wipPulse 1.6s ease-in-out infinite}
+@keyframes wipPulse{50%{opacity:.25}}
