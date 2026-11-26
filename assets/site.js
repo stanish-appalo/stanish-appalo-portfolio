@@ -129,12 +129,16 @@ function spline(p){var d='M'+p[0][0]+' '+p[0][1];for(var i=0;i<p.length-1;i++){v
 function build(){
   if(svg)svg.remove();
   var W=document.documentElement.clientWidth,H=document.body.scrollHeight,hero=document.querySelector('.hero'),y=hero?hero.offsetTop+hero.offsetHeight-60:0;
-  var dark=document.querySelector('main .dark'),end=dark?dark.offsetTop+120:H-100,step=Math.max(380,Math.min(620,W*.42)),side=1,i=0,pts=[[W*.18,y]];
-  while(y<end){y=Math.min(y+step,end);var x=side>0?W*(.82+Math.random()*.08):W*(.1+Math.random()*.08);
-    if(i%2===1){var cx=(pts[pts.length-1][0]+x)/2,cy=y-step*.5,r=Math.min(130,W*.09);
-      pts.push([cx-r*side*.2,cy-r*.9],[cx+r*side,cy-r*.3],[cx+r*side*.6,cy+r*.8],[cx-r*side*.6,cy+r*.5],[cx-r*side*.3,cy-r*.4]);}
-    pts.push([x,y]);side*=-1;i++}
-  var d=spline(pts),sw=W<700?12:26;
+  var dark=document.querySelector('main .dark'),end=dark?dark.offsetTop+140:H-100;
+  var ix=[].slice.call(document.querySelectorAll('.sec-head')).filter(function(h){return /Full index/.test(h.textContent)})[0];
+  var cross=ix?ix.getBoundingClientRect().top+scrollY-40:(y+end)/2;
+  var pad=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pad'))||Math.max(16,Math.min(48,W*.03));
+  var Lin=pad*.55,Lout=-16,Rin=W-pad*.55,Rout=W+16,st=W<700?200:260,pts=[[W*.5,y-30],[W*.3,y+40],[Lin,y+150]],yy=y+150,t=0;
+  while(yy<cross-st){yy+=st;var lp=(t%3===2);pts.push(lp?[Lin+40,yy-st*.45]:[t%2?Lin:Lout,yy]);if(lp){pts.push([Lin+10,yy-st*.1],[Lout+6,yy-st*.35],[Lin,yy])}t++}
+  pts.push([W*.25,cross+10],[W*.5,cross+40],[W*.75,cross+70],[Rin,cross+180]);yy=cross+180;t=0;
+  while(yy<end-st){yy+=st;var lp2=(t%3===2);pts.push(lp2?[Rin-40,yy-st*.45]:[t%2?Rin:Rout,yy]);if(lp2){pts.push([Rin-10,yy-st*.1],[Rout-6,yy-st*.35],[Rin,yy])}t++}
+  pts.push([Rin,end]);
+  var d=spline(pts),sw=W<700?12:24;
   svg=el('svg',{'class':'scroll-line',height:H,viewBox:'0 0 '+W+' '+H});
   var defs=el('defs',{}),g=el('linearGradient',{id:'rib',gradientUnits:'userSpaceOnUse',x1:0,y1:0,x2:W*.3,y2:1400,spreadMethod:'reflect'});
   [['0','#7a2cf0'],['.4','#a855ff'],['.7','#d9ff1f'],['1','#7a2cf0']].forEach(function(s){g.appendChild(el('stop',{offset:s[0],'stop-color':s[1]}))});
