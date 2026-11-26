@@ -423,3 +423,5 @@ a.row:hover{padding-left:12px}
 .pols>.pol:last-child:nth-child(3n+1){grid-column:2}
 @media(max-width:900px){.pols>.pol:last-child:nth-child(3n+1){grid-column:auto}}
 @media(max-width:760px){.card.w4{grid-column:1/-1}}
+.hero>.bg video{width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.58) contrast(1.05)}
+@media (prefers-reduced-motion:reduce){.hero>.bg video{display:none}.hero>.bg{background:center/cover no-repeat}}

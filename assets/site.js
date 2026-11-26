@@ -102,7 +102,7 @@ document.querySelectorAll('.tear').forEach(function(t){var w=1000,h=44,p=[],x=0;
 var hls=document.querySelectorAll('.hl');
 if(!window.gsap||matchMedia('(prefers-reduced-motion: reduce)').matches){hls.forEach(function(h){h.classList.add('on')});return}
 hls.forEach(function(h){ScrollTrigger.create({trigger:h,start:'top 88%',once:true,onEnter:function(){h.classList.add('on')}})});
-gsap.utils.toArray('.hero>.bg img').forEach(function(i){gsap.to(i,{yPercent:12,ease:'none',scrollTrigger:{trigger:i.closest('.hero'),start:'top top',end:'bottom top',scrub:true}})});
+gsap.utils.toArray('.hero>.bg img,.hero>.bg video').forEach(function(i){gsap.to(i,{yPercent:12,ease:'none',scrollTrigger:{trigger:i.closest('.hero'),start:'top top',end:'bottom top',scrub:true}})});
 gsap.utils.toArray('.strip img').forEach(function(i){gsap.fromTo(i,{yPercent:-18},{yPercent:0,ease:'none',scrollTrigger:{trigger:i.parentNode,scrub:true}})});
 var t=document.querySelectorAll('.title .ch>span');
 if(t.length){gsap.from(t,{yPercent:110,duration:1.1,ease:'expo.out',stagger:.06,scrollTrigger:{trigger:'.title',start:'top 85%'}});
