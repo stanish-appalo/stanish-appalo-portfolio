@@ -396,3 +396,22 @@ a.row:hover{padding-left:12px}
   html.menu-open,html.menu-open body{overflow:hidden}
 }
 @media(max-width:860px){.nav.open .links{background:var(--ink);align-items:flex-start;justify-content:center;z-index:2;gap:6px;font:400 clamp(40px,11vw,60px)/1.1 var(--serif)}}
+@media(hover:none),(max-width:860px){.card .ph img,.svc .ph img{filter:none}}
+/* phone typography */
+@media(max-width:700px){
+  .hero .mega{font-size:clamp(40px,12.5vw,64px);line-height:1.02}
+  .hscript{font-size:clamp(24px,7vw,34px)}
+  .hero-foot{gap:16px}.hero-foot p{font-size:15px;max-width:none}
+  .hero-foot .scroll-cue{display:none}
+  .card .meta{flex-direction:column-reverse;align-items:flex-start;gap:4px;margin-top:14px}
+  .card .meta span{text-align:left;font-size:10.5px;letter-spacing:.08em}
+  .card .meta h3{font-size:30px}
+  .card p{font-size:15px;line-height:1.55}
+  .cards{row-gap:44px}
+  .sec-head{align-items:flex-start;flex-direction:column;gap:10px}
+  .prow .nm{font-size:28px}
+  .lead{font-size:16.5px}
+  .case h3{font-size:42px}
+}
+@media(hover:none){.sec-head .eyebrow:has(b){}.prow:hover{padding-left:0;background:none}}
+@media(hover:none){.peek{display:none}}
