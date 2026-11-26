@@ -419,3 +419,7 @@ a.row:hover{padding-left:12px}
 .wip{position:absolute;top:10px;left:10px;z-index:2;display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:var(--lime);font:500 10px var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:5px 9px;border-radius:99px}
 .wip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime);animation:wipPulse 1.6s ease-in-out infinite}
 @keyframes wipPulse{50%{opacity:.25}}
+.card.w4{grid-column:span 4;margin-top:0}
+.pols>.pol:last-child:nth-child(3n+1){grid-column:2}
+@media(max-width:900px){.pols>.pol:last-child:nth-child(3n+1){grid-column:auto}}
+@media(max-width:760px){.card.w4{grid-column:1/-1}}
